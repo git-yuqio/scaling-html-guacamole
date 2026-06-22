@@ -1,6 +1,4 @@
-﻿import BorderGlow from './BorderGlow'
-
-export default function Hero() {
+﻿export default function Hero() {
   return (
     <section id="hero" className="hero-section">
       {/* Background atmosphere */}
@@ -25,16 +23,6 @@ export default function Hero() {
           走过的每一座城，都是内心版图的一部分。
         </p>
         <div className="hero__actions">
-          <BorderGlow
-            borderRadius={12}
-            glowRadius={16}
-            glowIntensity={0.8}
-            edgeSensitivity={25}
-            backgroundColor="var(--color-accent)"
-            colors={['#6d8cff', '#a78bfa', '#38bdf8']}
-            animated
-            noBorder
-          >
           <a href="#gallery" className="hero__btn hero__btn--primary">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
@@ -43,16 +31,6 @@ export default function Hero() {
             </svg>
             浏览作品
           </a>
-          </BorderGlow>
-          <BorderGlow
-            borderRadius={12}
-            glowRadius={16}
-            glowIntensity={0.6}
-            edgeSensitivity={25}
-            colors={['#6d8cff', '#a78bfa', '#38bdf8']}
-            animated
-            noBorder
-          >
           <a href="#about" className="hero__btn hero__btn--secondary">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -60,7 +38,6 @@ export default function Hero() {
             </svg>
             了解我
           </a>
-          </BorderGlow>
         </div>
       </div>
 

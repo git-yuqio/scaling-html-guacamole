@@ -166,10 +166,6 @@ img {
   height: var(--nav-height);
 }
 
-.navbar__inner > .border-glow-card:last-child {
-  align-self: center;
-}
-
 .navbar__logo {
   font-family: var(--font-display);
   font-size: 1.3rem;

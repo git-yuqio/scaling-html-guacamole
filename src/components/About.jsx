@@ -1,5 +1,4 @@
 ﻿import { useCallback, useEffect, useRef } from 'react'
-import BorderGlow from './BorderGlow'
 
 const cities = [
   { name: '海口', country: '中国' },
@@ -158,26 +157,20 @@ export default function About() {
         {/* City cloud */}
        <div className="about__cities">
          {cities.map(city => (
-            <BorderGlow
-              key={city.name}
-              borderRadius={10}
-              glowRadius={8}
-              glowIntensity={0.4}
-              edgeSensitivity={30}
-              colors={['#6d8cff', '#a78bfa', '#38bdf8']}
-              noBorder
-            >
             <button
+              key={city.name}
               className="about__city-tag glass-card"
               onClick={() => flyToCity(city.name)}
             >
               {city.name}
               <span className="about__city-country">{city.country}</span>
             </button>
-            </BorderGlow>
           ))}
         </div>
       </div>
     </section>
   )
 }
+
+
+

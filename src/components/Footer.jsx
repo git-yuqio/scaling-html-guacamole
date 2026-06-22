@@ -1,5 +1,4 @@
-﻿import BorderGlow from './BorderGlow'
-
+﻿
 export default function Footer() {
   return (
     <section id="footer" className="footer-section">
@@ -35,7 +34,6 @@ export default function Footer() {
             &copy; 2026 山河行记 · Made with wanderlust
           </p>
           <div className="footer__social">
-            <BorderGlow borderRadius={10} glowRadius={8} glowIntensity={0.4} edgeSensitivity={35} colors={['#6d8cff', '#a78bfa', '#38bdf8']} noBorder>
             <a href="#" className="footer__social-link" aria-label="Instagram">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
@@ -43,25 +41,21 @@ export default function Footer() {
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
               </svg>
             </a>
-            </BorderGlow>
-            <BorderGlow borderRadius={10} glowRadius={8} glowIntensity={0.4} edgeSensitivity={35} colors={['#6d8cff', '#a78bfa', '#38bdf8']} noBorder>
             <a href="#" className="footer__social-link" aria-label="微博">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="10"/>
                 <path d="M8 12c0-2.5 2-4 4-4s4 1.5 4 4"/>
               </svg>
             </a>
-            </BorderGlow>
-            <BorderGlow borderRadius={10} glowRadius={8} glowIntensity={0.4} edgeSensitivity={35} colors={['#6d8cff', '#a78bfa', '#38bdf8']} noBorder>
             <a href="#" className="footer__social-link" aria-label="小红书">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
               </svg>
             </a>
-            </BorderGlow>
           </div>
         </div>
       </div>
     </section>
   )
 }
+

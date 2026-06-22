@@ -1,5 +1,4 @@
 ﻿import { useState, useEffect } from 'react'
-import BorderGlow from './BorderGlow'
 
 const navLinks = [
   { label: '首页', href: '#hero' },
@@ -38,47 +37,26 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={
-avbar }>
+    <nav className={`navbar ${scrolled ? 'navbar--glass' : 'navbar--transparent'}`}>
       <div className="navbar__inner section-container">
         <a href="#hero" className="navbar__logo" onClick={(e) => scrollTo(e, '#hero')}>
           山河行记
         </a>
         <div className="navbar__links">
           {navLinks.map(link => (
-            <BorderGlow
-              key={link.href}
-              borderRadius={8}
-              glowRadius={6}
-              glowIntensity={0.4}
-              edgeSensitivity={35}
-              colors={['#6d8cff', '#a78bfa', '#38bdf8']}
-              noBorder
-            >
             <a
+              key={link.href}
               href={link.href}
-              className={
-avbar__link }
+              className={`navbar__link ${active === link.href.slice(1) ? 'navbar__link--active' : ''}`}
               onClick={(e) => scrollTo(e, link.href)}
             >
               {link.label}
             </a>
-            </BorderGlow>
           ))}
         </div>
-        <BorderGlow
-          borderRadius={100}
-          glowRadius={10}
-          glowIntensity={0.5}
-          edgeSensitivity={30}
-          backgroundColor="var(--color-accent)"
-          colors={['#6d8cff', '#a78bfa', '#38bdf8']}
-          noBorder
-        >
         <a href="#footer" className="navbar__contact" onClick={(e) => scrollTo(e, '#footer')}>
-          飞升
+          悟道
         </a>
-        </BorderGlow>
       </div>
     </nav>
   )
