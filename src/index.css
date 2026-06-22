@@ -167,11 +167,20 @@ img {
 }
 
 .navbar__logo {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.75rem;
   font-weight: 600;
   color: var(--color-text);
   letter-spacing: 0.02em;
+}
+
+.navbar--glass .navbar__logo {
+  font-size: 1.45rem;
 }
 
 .navbar__links {
@@ -181,6 +190,7 @@ img {
 }
 
 .navbar__link {
+  align-self: center;
   padding: 8px 18px;
   font-size: 0.88rem;
   color: var(--color-text-secondary);

@@ -42,18 +42,20 @@ export default function About() {
     if (mapInitRef.current || !window.L) return
     mapInitRef.current = true
 
-    const map = window.L.map('travel-map', {
-      center: [30, 110],
-      zoom: 3,
-      zoomControl: true,
-      scrollWheelZoom: true,
-      attributionControl: false,
+   const map = window.L.map('travel-map', {
+     center: [30, 110],
+     zoom: 3,
+      minZoom: 2,
+     zoomControl: true,
+     scrollWheelZoom: true,
+     attributionControl: false,
     })
 
     mapRef.current = map
-    window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-    }).addTo(map)
+   window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+     maxZoom: 18,
+      noWrap: true,
+   }).addTo(map)
 
     const markers = []
     cities.forEach(city => {
