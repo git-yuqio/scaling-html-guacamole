@@ -1,5 +1,4 @@
-# Travel Portfolio — Agent Notes
+﻿# Travel Portfolio 鈥?Agent Notes
 
-- 用 git 撤回代码后记得重新启动 dev server（`npx vite`），否则站点无法访问。
-
-- 每完成一个小板块的修改后，主动询问用户是否需要提交 git。
+- 鐢?git 鎾ゅ洖浠ｇ爜鍚庤寰楅噸鏂板惎鍔?dev server锛坄npx vite`锛夛紝鍚﹀垯绔欑偣鏃犳硶璁块棶銆?
+- 姣忓畬鎴愪竴涓皬鏉垮潡鐨勪慨鏀瑰悗锛屼富鍔ㄨ闂敤鎴锋槸鍚﹂渶瑕佹彁浜?git銆?

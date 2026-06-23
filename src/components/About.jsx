@@ -54,7 +54,7 @@ export default function About() {
         center: [30, 110],
         zoom: 3,
         minZoom: 2,
-        zoomControl: true,
+        zoomControl: false,
         scrollWheelZoom: true,
         attributionControl: false,
       })
