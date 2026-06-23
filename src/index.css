@@ -569,7 +569,7 @@ img {
   overflow: hidden;
 }
 .about__leaflet-map {
-  height: 420px;
+  height: 500px;
   width: 100%;
   border-radius: inherit;
   z-index: 1;
