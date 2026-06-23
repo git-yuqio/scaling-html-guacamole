@@ -55,7 +55,7 @@ export default function Navbar() {
           ))}
         </div>
         <a href="#footer" className="navbar__contact" onClick={(e) => scrollTo(e, '#footer')}>
-          悟道
+          飞升
         </a>
       </div>
     </nav>

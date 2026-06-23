@@ -34,61 +34,88 @@ const cityCoords = {
   洛杉矶: [34.05, -118.24],
 }
 
+const countryColors = {
+  '中国': '#00b4d8',
+  '日本': '#f77f00',
+  '美国': '#6d8cff',
+}
+
+
 export default function About() {
   const mapInitRef = useRef(false)
   const mapRef = useRef(null)
 
   useEffect(() => {
-    if (mapInitRef.current || !window.L) return
-    mapInitRef.current = true
+  function initMap() {
+    if (!window.L || mapInitRef.current) return false
+    try {
+      mapInitRef.current = true
+      const map = window.L.map('travel-map', {
+        center: [30, 110],
+        zoom: 3,
+        minZoom: 2,
+        zoomControl: true,
+        scrollWheelZoom: true,
+        attributionControl: false,
+      })
+      mapRef.current = map
 
-   const map = window.L.map('travel-map', {
-     center: [30, 110],
-     zoom: 3,
-      minZoom: 2,
-     zoomControl: true,
-     scrollWheelZoom: true,
-     attributionControl: false,
-    })
-
-    mapRef.current = map
-   window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-     maxZoom: 18,
-      noWrap: true,
-   }).addTo(map)
-
-    const markers = []
-    cities.forEach(city => {
-      const coords = cityCoords[city.name]
-      if (!coords) return
-
-      const marker = window.L.circleMarker(coords, {
-        radius: 6,
-        fillColor: '#6d8cff',
-        color: '#fff',
-        weight: 2,
-        opacity: 1,
-        fillOpacity: 0.8,
+      window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        noWrap: true,
       }).addTo(map)
 
-      marker.bindTooltip(city.name, {
-        direction: 'top',
-        offset: [0, -6],
-        className: 'map-tooltip',
+      const markers = []
+      cities.forEach(city => {
+        const coords = cityCoords[city.name]
+        if (!coords) return
+        const marker = window.L.circleMarker(coords, {
+          radius: 6,
+          fillColor: '#6d8cff',
+          color: '#fff',
+          weight: 2,
+          opacity: 1,
+          fillOpacity: 0.8,
+        }).addTo(map)
+        marker.bindTooltip(city.name, {
+          direction: 'top',
+          offset: [0, -6],
+          className: 'map-tooltip',
+        })
+        markers.push(marker)
       })
 
-      markers.push(marker)
-    })
+      const group = window.L.featureGroup(markers)
+      map.fitBounds(group.getBounds().pad(0.3))
+      return true
+    } catch (err) {
+      console.error('[Map] init error:', err)
+      mapInitRef.current = false
+      return false
+    }
+  }
 
-    const group = window.L.featureGroup(markers)
-    map.fitBounds(group.getBounds().pad(0.3))
+  if (initMap()) return
 
-    return () => {
-      map.remove()
+  const retryTimer = setInterval(() => {
+    if (initMap()) clearInterval(retryTimer)
+  }, 300)
+
+  return () => {
+    clearInterval(retryTimer)
+    if (mapRef.current) {
+      mapRef.current.remove()
       mapRef.current = null
       mapInitRef.current = false
     }
-  }, [])
+  }
+}, [])
+
+  const groupedCities = cities.reduce((acc, city) => {
+    if (!acc[city.country]) acc[city.country] = []
+    acc[city.country].push(city)
+    return acc
+  }, {})
 
   const flyToCity = useCallback((cityName) => {
     const coords = cityCoords[cityName]
@@ -108,10 +135,7 @@ export default function About() {
           <div className="about__intro">
             <div className="about__avatar-wrapper">
               <div className="about__avatar">
-                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="50" cy="35" r="20" fill="rgba(79,110,247,0.15)"/>
-                  <ellipse cx="50" cy="85" rx="32" ry="25" fill="rgba(79,110,247,0.1)"/>
-                </svg>
+                <img src="/avatar.jpg" alt="头像" className="about__avatar-img" />
                 <div className="about__avatar-ring" />
               </div>
             </div>
@@ -151,23 +175,34 @@ export default function About() {
         <div className="about__map-section">
           <p className="section-label">足迹地图</p>
           <h3 className="about__map-title">我曾抵达的地方</h3>
+
+          <div className="about__cities">
+            {Object.entries(groupedCities).map(([country, groupCities]) => (
+              <div key={country} className="about__city-group">
+                <span
+                  className="about__country-label"
+                  style={{ color: countryColors[country] }}
+                >
+                  {country}
+                </span>
+                <div className="about__city-tags">
+                  {groupCities.map(city => (
+                    <button
+                      key={city.name}
+                      className="about__city-tag glass-card"
+                      onClick={() => flyToCity(city.name)}
+                    >
+                      {city.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
           <div className="about__map glass-card">
             <div id="travel-map" className="about__leaflet-map"></div>
           </div>
-        </div>
-
-        {/* City cloud */}
-       <div className="about__cities">
-         {cities.map(city => (
-            <button
-              key={city.name}
-              className="about__city-tag glass-card"
-              onClick={() => flyToCity(city.name)}
-            >
-              {city.name}
-              <span className="about__city-country">{city.country}</span>
-            </button>
-          ))}
         </div>
       </div>
     </section>

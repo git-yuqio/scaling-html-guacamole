@@ -1,17 +1,31 @@
-﻿export default function Hero() {
+import { useState } from 'react'
+
+export default function Hero() {
+  const [videoLoaded, setVideoLoaded] = useState(false)
+
   return (
     <section id="hero" className="hero-section">
-      {/* Background atmosphere */}
+      {/* Full-screen background video */}
       <div className="hero__bg">
-        <div className="hero__mesh hero__mesh--1" />
-        <div className="hero__mesh hero__mesh--2" />
-        <div className="hero__mesh hero__mesh--3" />
-        <div className="hero__mesh hero__mesh--4" />
+        {!videoLoaded && (
+          <div className="hero__video-placeholder" />
+        )}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className={`hero__bg-video ${videoLoaded ? 'hero__video--loaded' : ''}`}
+          onLoadedData={() => setVideoLoaded(true)}
+        >
+          <source src="/hero-bg.mp4" type="video/mp4" />
+        </video>
         <div className="hero__overlay" />
         <div className="hero__vignette" />
       </div>
 
-      {/* Left: Content */}
+      {/* Content */}
       <div className="hero__left">
         <div className="hero__label">视觉设计师 · 摄影爱好者</div>
         <h1 className="hero__title">
@@ -38,18 +52,6 @@
             </svg>
             了解我
           </a>
-        </div>
-      </div>
-
-      {/* Right: Atmospheric image */}
-      <div className="hero__right">
-        <div className="hero__image-wrapper">
-          <img
-            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=85&auto=format&fit=crop"
-            alt="山河景观"
-            className="hero__image"
-          />
-          <div className="hero__image-overlay" />
         </div>
       </div>
 
