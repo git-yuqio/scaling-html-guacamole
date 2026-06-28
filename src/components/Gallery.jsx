@@ -1,7 +1,7 @@
 ﻿const photos = [
   {
     id: 1,
-    url: 'https://picsum.photos/seed/hainan/900/700',
+    url: '/photos/xisha-screenshot.png',
     title: '海南 · 西沙群岛',
     desc: '海水从透明到浅绿再到深蓝，层次分明得像时间在缓慢分层。',
     span: 'wide',
