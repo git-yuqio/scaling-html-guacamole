@@ -786,6 +786,8 @@ img {
 .journal__entry--reverse .journal__content {
   direction: ltr;
   padding: 60px 60px 60px 0;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .journal__entry:not(.journal__entry--reverse) .journal__content {
@@ -841,6 +843,9 @@ img {
   background: var(--color-border-strong);
 }
 
+.journal__entry--reverse .journal__meta {
+  justify-content: flex-end;
+}
 .journal__location {
   font-size: 0.8rem;
   color: var(--color-text-light);
