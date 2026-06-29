@@ -31,14 +31,14 @@ const entries = [
     id: 5,
     date: '2026 · 春',
     location: '云南 · 大理',
-    image: './photos/journal-dali-1.jpg',
+    image: './photos/journal-dali-1.webp',
     text: '云南，是最后一块温柔的补丁。苍山洱海间，时间被拉长，古城的石板路映着银饰的光，雪山脚下开着不知名的野花。少数民族的歌声从木楼里飘出来，和着风，让人忘了归期。',
   },
   {
     id: 6,
     date: '2026 · 春末',
     location: '日本 &amp; 美国',
-    image: './photos/journal-jpusa-1.jpg',
+    image: './photos/journal-jpusa-1.webp',
     text: '跨过太平洋，日本的城市像一本精心装订的册子——街道干净，神社的朱红与商圈的霓虹各安其位，礼貌而细腻。美国则截然不同：旧金山的坡道起伏如人生，彩色小屋依山面海；洛杉矶敞开着它的胸怀，海岸线绵长，阳光免费，自由得像一场不做计划的旅行。',
   },
 ]

@@ -29,14 +29,14 @@
   },
   {
     id: 5,
-    url: './photos/xian-1.jpg',
+    url: './photos/xian-1.webp',
     title: '西安 · 城墙',
     desc: '每一步都踩在唐朝的尘埃上。',
     span: 'square',
   },
   {
     id: 6,
-    url: './photos/shanghai-1.jpg',
+    url: './photos/shanghai-1.webp',
     title: '上海 · 浦东',
     desc: '万国建筑与玻璃幕墙隔江相望，新与旧碰撞却不刺眼。',
     span: 'wide',
@@ -57,7 +57,7 @@
   },
   {
     id: 9,
-    url: './photos/hangzhou-1.jpg',
+    url: './photos/hangzhou-1.webp',
     title: '杭州 · 西湖',
     desc: '斜风细雨，湖面泛起时间的涟漪。',
     span: 'square',
