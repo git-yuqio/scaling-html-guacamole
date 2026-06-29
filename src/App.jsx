@@ -18,8 +18,8 @@ function App() {
           glowRadius={160}
           sparkle={false}
           waveAmplitude={0}
-          gradientFrom="rgba(190, 110, 255, 0.65)"
-          gradientTo="rgba(150, 70, 220, 0.35)"
+          gradientFrom="rgba(215, 145, 255, 0.85)"
+          gradientTo="rgba(180, 100, 230, 0.55)"
         />
       </div>
       <Navbar />

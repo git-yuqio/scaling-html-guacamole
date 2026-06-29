@@ -1,0 +1,187 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - generic [ref=e4]:
+      - link "山河行记" [ref=e5] [cursor=pointer]:
+        - /url: "#hero"
+      - generic [ref=e6]:
+        - link "首页" [ref=e7] [cursor=pointer]:
+          - /url: "#hero"
+        - link "关于" [ref=e8] [cursor=pointer]:
+          - /url: "#about"
+        - link "作品" [ref=e9] [cursor=pointer]:
+          - /url: "#gallery"
+        - link "游记" [ref=e10] [cursor=pointer]:
+          - /url: "#journal"
+        - link "感悟" [ref=e11] [cursor=pointer]:
+          - /url: "#footer"
+      - link "飞升" [ref=e12] [cursor=pointer]:
+        - /url: "#footer"
+  - main [ref=e13]:
+    - generic [ref=e14]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: 视觉设计师 · 摄影爱好者
+        - heading "我的山河行记" [level=1] [ref=e21]
+        - paragraph [ref=e22]:
+          - text: 用镜头丈量世界，以设计记录旅途。
+          - text: 走过的每一座城，都是内心版图的一部分。
+        - generic [ref=e23]:
+          - link "浏览作品" [ref=e24] [cursor=pointer]:
+            - /url: "#gallery"
+            - img [ref=e25]
+            - text: 浏览作品
+          - link "了解我" [ref=e29] [cursor=pointer]:
+            - /url: "#about"
+            - img [ref=e30]
+            - text: 了解我
+      - generic [ref=e35]: 向下滚动
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - img "头像" [ref=e42]
+          - heading "用脚步 收集世界" [level=2] [ref=e44]
+          - paragraph [ref=e45]: 我始终迷恋着"出发"这件事。离开熟悉的街道，去另一座城市吹不一样的风， 看另一种天色如何暗下来。作为一名视觉设计专业的学生和摄影爱好者， 镜头是我丈量世界的方式，设计则是我整理记忆的语言。
+          - paragraph [ref=e46]: 这些年，国内的山海城林、海外的异域街巷，都曾留下我的脚印。 它们渐渐拼凑成我内心的版图——每一帧画面都是一段故事的开端。
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: "14"
+            - generic [ref=e50]: 座城市
+          - generic [ref=e51]:
+            - generic [ref=e52]: "2"
+            - generic [ref=e53]: 个国家
+          - generic [ref=e54]:
+            - generic [ref=e55]: ∞
+            - generic [ref=e56]: 段回忆
+      - generic [ref=e57]:
+        - paragraph [ref=e58]: 足迹地图
+        - heading "我曾抵达的地方" [level=3] [ref=e59]
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - generic [ref=e62]: 中国
+            - generic [ref=e63]:
+              - button "海口" [ref=e64] [cursor=pointer]
+              - button "三亚" [ref=e65] [cursor=pointer]
+              - button "桂林" [ref=e66] [cursor=pointer]
+              - button "成都" [ref=e67] [cursor=pointer]
+              - button "张家界" [ref=e68] [cursor=pointer]
+              - button "长沙" [ref=e69] [cursor=pointer]
+              - button "西安" [ref=e70] [cursor=pointer]
+              - button "上海" [ref=e71] [cursor=pointer]
+              - button "大理" [ref=e72] [cursor=pointer]
+          - generic [ref=e73]:
+            - generic [ref=e74]: 日本
+            - generic [ref=e75]:
+              - button "东京" [ref=e76] [cursor=pointer]
+              - button "大阪" [ref=e77] [cursor=pointer]
+              - button "京都" [ref=e78] [cursor=pointer]
+          - generic [ref=e79]:
+            - generic [ref=e80]: 美国
+            - generic [ref=e81]:
+              - button "旧金山" [ref=e82] [cursor=pointer]
+              - button "洛杉矶" [ref=e83] [cursor=pointer]
+        - generic [ref=e85]:
+          - generic:
+            - generic:
+              - img
+    - generic [ref=e99]:
+      - paragraph [ref=e100]: 精选影像
+      - heading "镜头下的风景" [level=2] [ref=e101]
+      - generic [ref=e102]:
+        - generic [ref=e104]:
+          - img "海南 · 西沙群岛" [ref=e105]
+          - generic [ref=e107]:
+            - heading "海南 · 西沙群岛" [level=3] [ref=e108]
+            - paragraph [ref=e109]: 海水从透明到浅绿再到深蓝，层次分明得像是时间在缓慢分层。
+        - generic [ref=e111]:
+          - img "桂林 · 漓江" [ref=e112]
+          - generic [ref=e114]:
+            - heading "桂林 · 漓江" [level=3] [ref=e115]
+            - paragraph [ref=e116]: 船行江上，两岸青山如黛，薄雾缠绕山腰，每一转弯都是一帧宋人笔意。
+        - generic [ref=e118]:
+          - img "成都 · 宽窄巷子" [ref=e119]
+          - generic [ref=e121]:
+            - heading "成都 · 宽窄巷子" [level=3] [ref=e122]
+            - paragraph [ref=e123]: 茶香、灯笼、街边掏耳朵的吆喝，慵懒而鲜活。
+        - generic [ref=e125]:
+          - img "张家界" [ref=e126]
+          - generic [ref=e128]:
+            - heading "张家界" [level=3] [ref=e129]
+            - paragraph [ref=e130]: 奇峰险峻如大地竖起的指骨，雾起时仿若仙境。
+        - generic [ref=e132]:
+          - img "西安 · 城墙" [ref=e133]
+          - generic [ref=e135]:
+            - heading "西安 · 城墙" [level=3] [ref=e136]
+            - paragraph [ref=e137]: 每一步都踩在唐朝的尘埃上。
+        - generic [ref=e139]:
+          - img "上海 · 外滩" [ref=e140]
+          - generic [ref=e142]:
+            - heading "上海 · 外滩" [level=3] [ref=e143]
+            - paragraph [ref=e144]: 万国建筑与玻璃幕墙隔江相望，新与旧在这里碰撞却不刺耳。
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - paragraph [ref=e147]: 旅途纪实
+        - heading "山河与故事" [level=2] [ref=e148]
+      - generic [ref=e149]:
+        - img "海南 · 西沙群岛" [ref=e152]
+        - generic [ref=e153]:
+          - generic [ref=e154]:
+            - generic [ref=e155]: 2025 · 夏
+            - generic [ref=e157]: 海南 · 西沙群岛
+          - paragraph [ref=e158]: 最先闯入记忆的，是海南。海口是悠闲的，棕榈树影铺满街道，海风常年带着温润的咸。三亚则把蓝色用到了极致——澄澈的海与洁白的沙滩绵延到天际，日出时海面碎金万顷，日落时又沉作一壶琥珀色的酒。而更远的西沙，是真正的秘境：海水从透明到浅绿再到深蓝，层次分明得像时间缓慢分层；无人岛安静得只听得见浪花拍岸，那种原始的美，让人不敢大声说话。
+      - generic [ref=e159]:
+        - img "桂林 &amp; 成都" [ref=e162]
+        - generic [ref=e163]:
+          - generic [ref=e164]:
+            - generic [ref=e165]: 2025 · 秋
+            - generic [ref=e167]: 桂林 &amp; 成都
+          - paragraph [ref=e168]: 从热带海风里抽身，我跌进桂林的水墨画。漓江蜿蜒于喀斯特峰林之间，船行江上，两岸青山如黛，薄雾缠绕山腰，每一转弯都是一帧宋人笔意。成都则把水墨换成烟火——宽窄巷子的茶香、锦里的灯笼、街边掏耳朵的吆喝，慵懒而鲜活，像这座城市从不急着天亮。
+      - generic [ref=e169]:
+        - img "湖南" [ref=e172]
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e175]: 2025 · 秋末
+            - generic [ref=e177]: 湖南
+          - paragraph [ref=e178]: 湖南是另一种张力：张家界的奇峰险峻如大地竖起的指骨，而长沙的湘江夜风裹着小龙虾的辣味和年轻人的笑闹，热烈得不容你沉默。从极致的自然奇观到喧闹的人间烟火，只在同一个省份里。
+      - generic [ref=e179]:
+        - img "西安" [ref=e182]
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - generic [ref=e185]: 2025 · 冬
+            - generic [ref=e187]: 西安
+          - paragraph [ref=e188]: 西安是沉下去的。城墙的青砖、大雁塔的剪影、兵马俑的沉默，每一步都踩在唐朝的尘埃上。而上海是浮起来的——外滩的万国建筑与陆家嘴的玻璃幕墙隔江相望，白天的车水马龙，入夜后化作星河，新与旧在这里碰撞，却不刺耳。
+      - generic [ref=e189]:
+        - img "云南 · 大理" [ref=e192]
+        - generic [ref=e193]:
+          - generic [ref=e194]:
+            - generic [ref=e195]: 2026 · 春
+            - generic [ref=e197]: 云南 · 大理
+          - paragraph [ref=e198]: 云南，是最后一块温柔的补丁。苍山洱海间，时间被拉长，古城的石板路映着银饰的光，雪山脚下开着不知名的野花。少数民族的歌声从木楼里飘出来，和着风，让人忘了归期。
+      - generic [ref=e199]:
+        - img "日本 &amp; 美国" [ref=e202]
+        - generic [ref=e203]:
+          - generic [ref=e204]:
+            - generic [ref=e205]: 2026 · 春末
+            - generic [ref=e207]: 日本 &amp; 美国
+          - paragraph [ref=e208]: 跨过太平洋，日本的城市像一本精心装订的册子——街道干净，神社的朱红与商圈的霓虹各安其位，礼貌而细腻。美国则截然不同：旧金山的坡道起伏如人生，彩色小屋依山面海；洛杉矶敞开着它的胸怀，海岸线绵长，阳光免费，自由得像一场不做计划的旅行。
+    - generic [ref=e213]:
+      - paragraph [ref=e214]: 旅途回望
+      - blockquote [ref=e215]:
+        - paragraph [ref=e216]:
+          - text: "\"如今回望，那片碧海、那座奇峰、那道城墙、那条霓虹街，"
+          - text: 都不再是远方的地名。"
+        - paragraph [ref=e217]:
+          - text: "\"它们融进我的呼吸里，让我在面对陌生时不再慌张，"
+          - text: 在遇见不同时学会微笑。"
+      - paragraph [ref=e218]: 世界这本书，我读得不多，但每一页都认真地折过角。
+      - paragraph [ref=e219]: 而我知道，最好的章节，还在下一程。
+      - generic [ref=e221]:
+        - paragraph [ref=e222]: © 2026 山河行记 · Made with wanderlust
+        - generic [ref=e223]:
+          - link "Instagram" [ref=e224] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e225]
+          - link "微博" [ref=e228] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e229]
+          - link "小红书" [ref=e232] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e233]

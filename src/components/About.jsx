@@ -135,7 +135,7 @@ export default function About() {
           <div className="about__intro">
             <div className="about__avatar-wrapper">
               <div className="about__avatar">
-                <img src="/avatar.jpg" alt="头像" className="about__avatar-img" />
+                <img src="./avatar.jpg" alt="头像" className="about__avatar-img" />
                 <div className="about__avatar-ring" />
               </div>
             </div>

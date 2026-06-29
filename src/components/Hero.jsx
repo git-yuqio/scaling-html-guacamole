@@ -19,7 +19,7 @@ export default function Hero() {
           className={`hero__bg-video ${videoLoaded ? 'hero__video--loaded' : ''}`}
           onLoadedData={() => setVideoLoaded(true)}
         >
-          <source src="/hero-bg.mp4" type="video/mp4" />
+          <source src="./hero-bg.mp4" type="video/mp4" />
         </video>
         <div className="hero__overlay" />
         <div className="hero__vignette" />
